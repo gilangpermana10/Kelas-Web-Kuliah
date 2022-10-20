@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- - Nama
+    - email
+    - password
+    - gender (select/radio)
+    - alamat ( textarea )
+    - foto (file ) -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration</form></title>
+</head>
+<body>
+    <form class="form2" action="" method="post">
+        <h1 style="padding:0px 0 10px 0">registration</h1>
+        <div>
+            <input type="text" name="name" id="un" placeholder="nama" style="padding: 20px ;">
+        </div>
+        <div>
+            <input type="email" name="mail" id="mail" placeholder="E - mail" style="padding: 20px ;">
+        </div>
+        <div 
+        style="text-align: left;
+        padding: 20px;
+        background-color: rgb(230, 230, 230); 
+        border-radius: 30px;
+        margin: 15px 0;
+        font-size: small;
+        color: grey;
+        " >
+            <label for="Gender" style="font-size: small;">Gender</label><br>
+            <p><input type='radio' name='Gender' value='pria' class="gender"/>laki-laki</p>
+             <p><input type='radio' name='Gender' value='perempuan' class="gender" />perempuan</p>
+        </div>
+        
+        <div>
+            <textarea name="alamat" id="" cols="30" rows="10" placeholder="Alamat"></textarea>
+        </div>
+        <div>
+            <input class="custom-file-input" type="file" name="foto" id="foto" placeholder="Foto" style="padding: 20px ; font-size: small; height: 60px;">
+        </div>
+        <div>
+            <input type="password" name="pass" id="pass" placeholder="Password" style="padding: 20px ;">
+        </div>
+        <div>
+            <input type="password" name="conpass" id="conpass" placeholder="konfirmasi Password" style="padding: 20px ;">
+        </div>
+    <div><br>
+            <button>
+                Registrasi
+            </button>
+    </div>
+    <div class="but-login"><br>
+            <a href="login.html"><button>
+                Login
+            </button></a>
+    </div>
+    
+</body>
+</html>

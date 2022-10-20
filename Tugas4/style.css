@@ -1,0 +1,39 @@
+body {
+
+}
+
+.landing {
+    background-color: beige;
+    position: relative;
+    padding: 30px;
+    height: 800px;
+    display: flex;
+}
+
+.article{
+    padding: 0 0 0 100px;
+    width:500px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 20%;
+    align-items: center;
+    gap: 10px;
+    flex-direction:column;
+}
+
+.button{
+    padding:10px 30px;
+    background-color: yellowgreen;
+    font-size: larger;
+    color: white;
+    border-radius: 30px;
+    border-style: none;
+}
+
+img{
+    position: absolute;
+    bottom: -20%;
+    left:50%;
+    
+}

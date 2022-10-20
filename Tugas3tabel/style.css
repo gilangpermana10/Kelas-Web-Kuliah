@@ -1,0 +1,154 @@
+.center{
+    margin: 50px 50px;
+    padding: 10px;
+    
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header2{
+    font-size: small;
+    color: gray;
+}
+
+.Purchase{
+    text-align: left;
+
+}
+
+
+.numb{
+    padding: 5px 5px;
+    color: green;
+    border-radius: 6px;
+    font-size: smaller;
+    width: fit-content;
+    background-color: rgb(199, 255, 188) ;
+}
+
+table {
+    border: 1px solid gray;
+    border-color: #cccc;
+    margin: 10 auto;
+    border-collapse: separate;
+    border-radius: 15px;
+
+}
+
+th {
+    border-bottom: 1px solid grey;
+    border-color: #cccc;
+    word-wrap:unset;
+    padding: 10px 20px;
+}
+
+td {
+    padding: 15px 20px;
+}
+
+tbody {
+    border: none;
+}
+
+button {
+    height: 30px;
+    background-color: white;
+    align-content: center;
+    padding: 10px 20px;
+    border: none;
+    color: #696969;
+    border-radius: 10px;
+    font-weight: normal;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+    height: 30px;
+    background-color: white;
+    padding:  10px 20px;
+    border: 1px solid grey;
+    border-color: blue;
+    border-radius: 10px;
+    font-weight: normal;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.14),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.search-bar{
+    
+}
+
+.search-pic{
+    z-index: 999;
+
+    margin-left: 500px ;
+}
+
+.search{
+    padding: 10px 20px ;
+    border-radius: 10px;
+    margin-left: 300px;
+    padding-left: 40px;
+    background-color: rgba(243, 243, 243, 0.8);
+    border: 1px;
+}
+
+.search:hover{
+    padding: 10px 20px ;
+    border-radius: 10px;
+    margin-left: 300px;
+    border: 1px solid;
+    border-color: rgb(192, 192, 192);
+    background-color: white;
+    
+}
+
+.cancel{
+    background-color: rgb(255, 188, 188);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(163, 0, 0);
+}
+
+.sending{
+    background-color: rgb(204, 255, 203);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(16, 67, 7);
+    font-weight: bold;
+}
+
+
+/* pager */
+
+.pager {
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-left: 0;
+    margin: 20px 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .pager li {
+    display: inline;
+  }
+  
+  .pager li>a,.pager li>span {
+    color: #696969;
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .pager li>a:hover,.pager li>a:focus {
+    text-decoration: none;
+    background-color: #f3f3f3;
+  }
