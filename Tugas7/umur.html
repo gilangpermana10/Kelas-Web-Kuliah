@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umur</title>
+</head>
+<body>
+    <form action="">
+        <label for="nama">Input Nama</label>
+        <input type="text" name="nama" id="nama">
+        <label for="lahir">Input lahir</label>
+        <input type="number" name="lahir" id="lahir">
+
+        <button type="button">cek umur</button>
+        <!-- <div id="hasilArea">
+           <h1>hallo <span class="varName">Loading</span> sekarang umur anda <span class="hasil">Loading</span></h1>
+        </div> -->
+        <h1 id="hasilArea"></h1>
+    </form>
+
+    <script>
+        
+
+        function funcUmur(nama, lahir){
+            return 'hello ' + nama + ' Sekarang Umur anda adalah ' + (2022 - lahir);
+        }
+
+        const button = document.querySelector('button');
+        const hasilArea = document.querySelector('#hasilArea');
+        hasilArea.style.display = 'none';
+
+        button.addEventListener("click", function() {
+            let nama = document.querySelector('#nama').value;
+            let lahir = document.querySelector('#lahir').value;
+            hasilArea.textContent = funcUmur(nama, lahir);
+            hasilArea.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
