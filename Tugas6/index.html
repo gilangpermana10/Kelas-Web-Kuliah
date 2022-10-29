@@ -5,29 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active{
+            font-weight: bold;
+            border-bottom: turquoise;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+    </style>
     <title>homepage</title>
 </head>
-<body>
-    <header class="bg-header" class="">
-        <section class="container flex justify-between mx-auto py-5 items-center ">
+<body class="bg-[#F6F9FC]">
+    <header class="" >
+        <section class="container flex justify-between mx-auto py-5 items-center X ">
             <div id="left-side" class="flex gap-10 items-center">
                 <nav class="mt-5 ">
                     <ul class="flex gap-10 items-center">
-                        <li><img src="./Logo.png" alt=""></li>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Out Work</li>
-                        <li>Blog</li>
-                        <li>Resource</li>
-                        <li>Contact</li>
+                        <li><img src="img/Logo.png" alt=""></li>
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Our Work</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Resource</a></li>
+                        <li><a href="">Contact</a></li>
+
                     </ul>
                 </nav>
             </div>
             </div class="flex gap-10 items-center">
                 <div id="Right-side" >
                 <button>
-                    <img src="./search.png" alt="">
+                    <img src="img/search.png" alt="">
                 </button>
                 <a href="#" class="bg-teal-600 py-3 px-6 rounded-full text-white ml-10">
                     Get Started
@@ -37,31 +46,34 @@
     </header>  
 
     <section class="max-w-[750px] mx-auto text-center mt-[150px] ">
-        <h1 class="text-5xl font-bold my-7">It's Fun build to build a website with the Mangcoding Team </h1>
+        <h1 class="text-5xl font-bold my-7">It's Fun build to build a website with the <span class=""> Mangcoding Team </span></h1>
         <p>The Mangcoding team will help build a website for your company with quality and guaranteed services, 
             with custom templates you can create a website as you like.</p>
         <div class="my-7">
             <a href="" class="bg-teal-600 py-3 px-6 rounded-full text-white ml-10">Get Started</a>
-            <a href="">Explore Our Blog</a>
+            <a href="" class="font-medium">Explore Our Blog <img src="img/right arrow.png" alt="" class="inline"> </a>
         </div>
+        <div class="max-w-max mx-auto">
     </section>
-    <div class="max-w-max mx-auto">
-        <img src="./banner.png" alt="">
+        <img src="img/banner.png" alt="">
     </div>
-    <div class="flex mx-auto justify-content items-center ">
-        <p class="flex">Brands that trust us</p>
+    <div class="flex mx-auto justify-content items-center ">   
     </div>
-    <section class="container mx-auto flex justify-content my-[50px]">
-        <ul class="flex gap-10 items-center mx-auto my-[50px]">
-            <li><img src="./BleachMall.png" alt=""></li>
-            <li><img src="./ceria kid.png" alt=""></li>
-            <li><img src="./fjx.png" alt=""></li>
-            <li><img src="./pizza.png" alt=""></li>
-            <li><img src="./rata.png" alt=""></li>
-            <li><img src="./plant.png" alt=""></li>
-        </ul>
-    </section>
 
+    <section class=" bg-white ">
+        <p class="text-lg mx-auto text-center pt-10 font-sans">Brands that trust us</p>
+        <div class="container mx-auto flex justify-content my-[50px]">
+            
+            <ul class="flex gap-10 items-center mx-auto my-[50px]">
+                <li><img src="img/BleachMall.png" alt=""></li>
+                <li><img src="img/ceria kid.png" alt=""></li>
+                <li><img src="img/fjx.png" alt=""></li>
+                <li><img src="img/pizza.png" alt=""></li>
+                <li><img src="img/rata.png" alt=""></li>
+                <li><img src="img/plant.png" alt=""></li>
+            </ul>
+    </div>
+    </section>
 
 </body>
 </html>
