@@ -10,5 +10,4 @@ hamburgerButton.addEventListener("click", () => {
 
 searchButton.addEventListener("click", () => {
   searchBtn.classList.toggle("active");
-  console.log("clicked");
 })
