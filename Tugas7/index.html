@@ -47,12 +47,6 @@
       border-radius: 10px;
     }
 
-    .search-button{
-      padding: 1rem 2rem;
-      color: white;
-      border-radius: 10px;
-    }
-
     .active {
       @apply block;
     }
@@ -77,8 +71,14 @@
         <a href="">Our Work</a>
       </div>
       <div class="flex items-center space-x-5 hidden md:flex">
-        <div class="search-button hidden md:flex">
-          <img src="./img/search.png" alt="" style="width: 20px; height:auto; cursor: pointer;" class="search-btn">
+        <img src="./img/search.png" alt="" style="width: 20px; height:auto; cursor: pointer;" class="search-button">
+        <div class="hidden md:flex">
+
+          <div class="search-btn flex items-center space-x-1 w-full border bg-white border-gray-400 px-3 rounded-full hidden">
+            <input type="text" class="w-full h-10 border-none bg-none m-2 rounded-full" placeholder="Search ..." />
+            
+        </div>
+
         </div>
         
         <a href="" class="text-white bg-blue-600 px-5 py-3 rounded-full">Get Started</a>
