@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style type="text/tailwindcss">
     @layer utilities {
 
@@ -28,17 +27,18 @@
     }
 
     .content {
-      background-image: url('./img/Rectangle\ 728.png');
+      background-image: url('./img/back.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100%;
     }
 
     .content-2 {
-      background-image: url('./img/Rectangle\ 730.png');
+      background-image: url('./img/back-sect.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
+
     .card {
       @apply space-y-2;
       background: #FFFFFF;
@@ -53,6 +53,10 @@
       border-radius: 10px;
     }
 
+    .active {
+      @apply block;
+    }
+
 
   }
 </style>
@@ -60,33 +64,56 @@
 </head>
 
 <body>
-  <header class="">
-    <nav class="container flex p-3 items-center">
+  
+  <header class="bg-[url('./img/header-bg.png')]">
+    <div class="container flex p-3 items-center justify-between">
       <a href="">
         <img src="./img/Logo.png" alt="">
       </a>
-      <div class="ml-16 flex-1 space-x-4">
+      <div class="ml-16 flex-1 space-x-4 hidden md:flex">
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Service</a>
         <a href="">Our Work</a>
       </div>
-      <div class="flex items-center space-x-5">
-        <div class="search-button">
+      <div class="flex items-center space-x-5 hidden md:flex">
+        <div class="search-button hidden md:flex">
           <img src="./img/search.png" alt="" style="width: 20px; height:auto; cursor: pointer;" class="search-btn">
         </div>
-        <span>
-          <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+        <a href="" class="text-white bg-blue-600 px-5 py-3 rounded-full">Get Started</a>
+      </div>
+
+      <a href="#" class="hamburger md:hidden flex">
+        <img src="./img/hamburger.svg" alt="">
+      </a>
+
+      <div class="popup absolute top-10 container bg-white z-10 p-10 shadow-lg rounded-lg  hidden md:hidden">
+        <div class="flex items-center space-x-1 w-full mb-4 border border-gray-400 px-3 rounded-full">
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="8.36556" cy="8.36458" r="7.03353" stroke="#070D13" stroke-width="2" />
             <rect x="13.8848" y="13" width="6.56463" height="1.25023" rx="0.625113" transform="rotate(45 13.8848 13)"
               fill="#070D13" />
-          </svg> -->
-        </span>
-        <a href="" class="text-white bg-blue-600 px-5 py-3 rounded-full">Get Started</a>
+          </svg>
+          <input type="text" class="w-full border-none" placeholder="Search ..." />
+        </div>
+
+        <div class="space-y-4 items-center flex flex-col">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Service</a>
+          <a href="">Our Work</a>
+        </div>
+
+        <div class="flex flex-col mt-4">
+          <a href="" class="text-white bg-blue-600 px-5 py-3 rounded-full text-center">Get Started</a>
+        </div>
       </div>
-    </nav>
-  </header>
-  <section style="background: linear-gradient(180deg, #FFFFFF 0%, #EAF4FF 46.08%, #FFFFFF 100%);">
+    </div>
+
+
+   
+  <section style="">
     <div class="container flex items-center justify-center">
       <div class="space-y-10 mt-12 text-center">
         <h1 class="text-5xl font-medium max-w-[706px] mx-auto font-bold">
@@ -104,25 +131,30 @@
 
         <div class="flex space-x-4 items-center w-full justify-center mt-8">
           <a href="" class="text-white bg-blue-600 px-5 py-3 rounded-full">Get Started</a>
-          <a href="" class="font-bold">Explore Our Blog <img src="./img/right arrow.png" class="inline" alt=""> </a>
+          <a href="" class="font-bold underline">Explore Our Blog <img src="./img/right arrow.png" class="inline" alt=""> </a>
         </div>
 
         <img src="./img/banner.png" class="" alt="">
 
-        <div class="mt-8">
-          <h2 class="text-gray-500">Brand that trusts us</h2>
-          <div class="flex items-center space-x-5">
-            <img class="" src="./img/BleachMall.png" alt="">
-            <img class="" src="./img/ceria kid.png" alt="">
-            <img class="" src="./img/fjx.png" alt="">
-            <img class="" src="./img/pizza.png" alt="">
-            <img class="" src="./img/plant.png" alt="">
-            <img class="" src="./img/rata.png" alt="">
-          </div>
-        </div>
       </div>
     </div>
-  </section>
+  
+  </header>
+
+  <section class=" py-10">
+  <div class="mb-10 pb-30  h-30 container">
+    <h2 class="text-gray-500 text-center">Brand that trusts us</h2>
+    
+    <div class="flex items-center place-content-center space-x-10 container">
+      <img class="" src="./img/BleachMall.png" alt="">
+      <img class="" src="./img/ceria kid.png" alt="">
+      <img class="" src="./img/fjx.png" alt="">
+      <img class="" src="./img/pizza.png" alt="">
+      <img class="" src="./img/plant.png" alt="">
+      <img class="" src="./img/rata.png" alt="">
+    </div>
+  </div>
+</section>
 
   <section class="content py-16 bg-gray-100">
     <div class="container">
@@ -214,24 +246,19 @@
     <p class="w-5/12 text-center text-gray-500">Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering
       makrora,</p>
 
-    <div class="flex items-center p-8">
-      <div class="max-w-[500px]">
-        <img class="mb-6" src="./img/work-1.png" alt="">
-        <h4 class="text-4xl font-semibold">Retainer Orely Studio</h4>
-        <p class="text-gray-700 mt-4">
-          Retainer Orely Studio is a website from the Orely company that we developed into Code.
-        </p>
-
-        <div class="flex space-x-4 items-center w-full justify-start mt-8">
-          <a href="" class="text-white bg-blue-600 px-5 py-3 rounded-full">Read More</a>
-          <a href="" class="font-bold">Visit Website </a>
-        </div>
-      </div>
-      <img class="mb-5" src="./img/Frame 101.png" alt="">
-    </div>
+   
 
 
     <section class="grid grid-cols-2 gap-5">
+      <article class="flex flex-col items-start p-8 space-y-2">
+        <img class="mb-5" src="./img/work-4.png" alt="">
+        <h4 class="text-xl font-semibold">Retainer Orely Studio</h4>
+        <p class="text-slate-400">https://retainer.orely.co/</p>
+        <section class="flex gap-2 mt-2">
+          <p class="border-2 p-1">WordPress</p>
+          <p class="border-2 p-1">Tailwind</p>
+        </section>
+      </article>
       <article class="flex flex-col items-start p-8 space-y-2">
         <img class="mb-5" src="./img/work-2.png" alt="">
         <h4 class="text-xl font-semibold">Beacukai Sangatta</h4>
@@ -263,9 +290,10 @@
       </article>
     </section>
     <button class="rounded-full mt-5 mb-10">Our work</button>
+      
   </section>
 
-  <section class="flex flex-col items-center bg-slate-200  py-12">
+  <section class="flex flex-col items-center bg-[url('./img/back-testi.png')]  py-12">
     <h2 class="text-6xl mb-4 text-center text-gradient font-bold">What people say about</h2>
     <h2 class="text-6xl font-norma l font-bold">Mangcoding Team?</h2>
     <h3 class="text-4xl text-center mt-16 mb-14 w-2/5 ">“ It was a great experience to work with Mangcoding, we love the
@@ -323,7 +351,7 @@
     </section>
     <button class="mb-14 button rounded-full">More</button>
   </section>
-  <section class="content-2 h-52 flex items-center justify-between p-20">
+  <section class="content-2 h-52 flex items-center justify-between p-20 ">
     <div class="container">
       <h3 class="text-4xl font-bold mb-2 mt-5 ">Let's build a website with mangcoding</h3>
       <p class="mb-10 text-gray-500 text-md">Mangcoding team will help you in branding your product</p>
@@ -413,6 +441,9 @@
   <footer class="bg-[#ffffff] py-5">
     <p class="text-center  text-[#999999] ">© 2022 Mangcoding. All rights reserved.</p>
   </footer>
+
+  <script src="./function.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer utilities {
+
+    .container {
+      @apply max-w-[85%] mx-auto;
+    }
+
+    .button-primary {
+      background-color: #0EC5D7;
+      padding: 1rem 2rem;
+      color: white;
+
+    }
+
+    .content{
+        background-image: url(./img/back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .content2{
+        background-image: url(./img/back-sect.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .text-gradient {
+      background: linear-gradient(90.01deg, #E18700 35.24%, #FF32AD 66.21%, #0EC5D7 97.18%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    .card {
+      @apply space-y-2;
+      background: #FFFFFF;
+
+      box-shadow: 0px 94px 80px rgba(0, 0, 0, 0.02), 0px 39.271px 33.4221px rgba(0, 0, 0, 0.0143771), 0px 20.9961px 17.869px rgba(0, 0, 0, 0.0119221), 0px 11.7703px 10.0172px rgba(0, 0, 0, 0.01), 0px 6.2511px 5.32008px rgba(0, 0, 0, 0.00807786), 0px 2.60122px 2.21381px rgba(0, 0, 0, 0.00562291);
+      border-radius: 10px;
+    }
+
+
+  }
