@@ -8,8 +8,10 @@
     
     <title>Motelkusuka</title>
 </head>
-<body class="font-['Poppins']">
-    <style>
+<body class="font-['Poppins'] mx-auto" >
+    <style type="text/tailwindcss">
+        
+
         header{ 
             height: 780px;
         }
@@ -30,33 +32,76 @@
             border-radius: 20px;
         }
 
+        @media screen and (max-width:1023px) {
+            nav {
+                left: -100%;
+                transition: all .3s ease-in-out;
+            }
+            nav > ul > li {
+                @apply w-full p-0;
+            }
+            .has-child  {
+                @apply overflow-hidden;
+            }
+            .has-child > span.caret {
+                @apply invert-0 top-4;
+            }
+            .has-child.active .submenu {
+                @apply visible opacity-100 max-h-[1000px];
+            }
+            nav .submenu {
+                @apply visible opacity-100 relative w-full max-h-0;
+            }
+            nav.active {
+                left: 0;
+            }
+        }
+
     </style>
-    <header class="bg-gradient-to-r from-[#F5FFFE] to-green-100 ">
-        <img src="./res/Banner-1.png" alt="" class="absolute right-0 top-0">
+    <header class=" md:bg-gradient-to-r from-[#F5FFFE] to-green-100 bg-white relative ">
+        <div class="md:absolute -z-100 right-0 top-0 static">
+            <img src="./res/Banner-1.png" alt=""  >
+        </div>
         <section class="">
 
-            <nav class="container flex p-3 justify-between items-center mx-auto">
-                <div class=" flex-1 space-x-6 ">
-                    <a href="#"><img src="./res/main-logo.svg" alt="" class="inline-block mb-5 mr-10"></a>
-                    <a href="#" class="font-bold border-b-4 border-green-500 p-2">Home</a>
-                    <a href="#" class="ease-in-out duration-300 hover:font-bold hover:scale-110">Booking</a>
-                    <a href="#" class="ease-in-out duration-300 hover:font-bold hover:scale-110">Fasilities</a>
-                    <a href="#"class="ease-in-out duration-300 hover:font-bold hover:scale-110">About Us</a>
-                    <a href="#"class="ease-in-out duration-300 hover:font-bold hover:scale-110">Contact</a> 
+            <nav class="container flex p-3 justify-between items-center mx-auto ">
+                <div class="md:hidden inline-block flex-1 space-x-6 mb-5 mr-10 p-5 top-0">
+                    <img src="./res/main-logo.svg" alt="" >
+                </div>
+                <div class="flex items-center space-x-4 sm:z-50 md:hidden top-0">
+                    <a href="#"><img src="./res/hamburger.svg" alt=""></a>    
                 </div>
 
-                <div class="flex-2 space-x-4 z-50">
-                    <a href="#" class="ease-in-out duration-300 font-bold text-green-500 underline hover:text-lg ">Login</a>
-                    <a href="#"><button type="button" class="ease-out duration-300 bg-green-500 py-3 rounded-full text-white px-10 font-bold hover:bg-green-600 hover:scale-110"> Register</button></a>
+                <div class=" flex space-x-6 hidden md:block">
+                    <a href="#"><img src="./res/main-logo.svg" alt="" class="inline-block mb-5 mr-10"></a>
+                    <a href="#" class="font-bold border-b-4 border-[#42A66A] p-2 title">Home</a>
+                    <a href="#" class="ease-in-out duration-300 hover:font-bold hover:scale-110 title ">Booking</a>
+                    <a href="#" class="ease-in-out duration-300 hover:font-bold hover:scale-110 title">Fasilities</a>
+                    <a href="#"class="ease-in-out duration-300 hover:font-bold hover:scale-110 title">About Us</a>
+                    <a href="#"class="ease-in-out duration-300 hover:font-bold hover:scale-110 title">Contact</a> 
+                    
                 </div>
+
+                
+
+                <div class="md:flex items-center space-x-4 sm:z-50 hidden">
+                    <a href="#" class="ease-in-out duration-300 font-bold text-[#42A66A] underline hover:text-lg ">Login</a>
+                    <a href="#"><button type="button" class="ease-out duration-300 bg-[#42A66A] py-3 rounded-full text-white px-10 font-bold hover:bg-green-600 hover:scale-110"> Register</button></a>
+                </div>
+
+                
+
+                
             </nav>
+
+           
             
-            <div class="container mx-auto">
+            <div class="container mx-auto z-100">
                 <div class="mt-40" style="width: 700px;">
                     <p class="text-xl text-gray-800 font-medium">Mountains | Plans | Beaches</p>
-                    <h1 class="text-6xl my-10"><span class="font-bold text-green-500">Find</span> your perfect <span class="font-bold text-green-500">place</span> to your <span class="font-bold text-green-500">family</span></h1>
+                    <h1 class="text-6xl my-10"><span class="font-bold text-[#42A66A]">Find</span> your perfect <span class="font-bold text-[#42A66A]">place</span> to your <span class="font-bold text-[#42A66A]">family</span></h1>
                     <p class="text-sm text-opacity-20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab magnam nulla dolores, voluptatibus earum culpa error est vel consectetur corrupti odit assumenda. Delectus ab quasi tenetur autem perferendis nisi reiciendis.</p>
-                    <button type="button" class="bg-green-500 py-3 rounded-full text-white px-10 font-bold mt-10 ease-in-out duration-300 hover:bg-green-600 hover:drop-shadow-lg hover:scale-110">Book Now</button>
+                    <button type="button" class="bg-[#42A66A] py-3 rounded-full text-white px-10 font-bold mt-10 ease-in-out duration-300 hover:bg-green-600 hover:drop-shadow-lg hover:scale-110">Book Now</button>
                 </div>
         </section>
     </header>
@@ -85,7 +130,7 @@
                     </p>
                 </div>
 
-                <button type="button" class="ease-in-out duration-300 hover:bg-green-500 hover:scale-105 hover:text-white border-green-500 border-[1px] rounded-full py-3 px-10 text-green-500 font-bold hover:drop-shadow-lg">
+                <button type="button" class="ease-in-out duration-300 hover:bg-[#42A66A] hover:scale-105 hover:text-white border-[#42A66A] border-[1px] rounded-full py-3 px-10 text-[#42A66A] font-bold hover:drop-shadow-lg">
                     See More
                 </button>
             </div>
@@ -165,7 +210,7 @@
                     <p class="text-green-400 pt-10">Booking</p>
                     <h2 class="text-4xl py-2 pb-5 font-bold">Order Now by Clicking the button below</h2>
                     <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quis earum rerum autem, </p>
-                    <button type="button" class="ease-in-out duration-300  hover:scale-110 hover:bg-green-500 hover:text-white hover:drop-shadow-lg border-green-500 border-[1px] rounded-full py-3 px-10 mt-7 text-green-500 font-bold">
+                    <button type="button" class="ease-in-out duration-300  hover:scale-110 hover:bg-[#42A66A] hover:text-white hover:drop-shadow-lg border-[#42A66A] border-[1px] rounded-full py-3 px-10 mt-7 text-[#42A66A] font-bold">
                         Booking
                     </button>
                 </div>
@@ -184,7 +229,7 @@
                     <p class="text-green-400 pt-10">Publish</p>
                     <h2 class="text-4xl py-2 pb-5 text-sm font-bold">Register now so you can choose The Right House for your Family</h2>
                     <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quis earum rerum autem, </p>
-                    <button type="button" class="ease-in-out duration-300  hover:scale-110 hover:bg-green-500 hover:text-white hover:drop-shadow-lg border-green-500 border-[1px] rounded-full py-3 px-10 mt-7 text-green-500 font-bold">
+                    <button type="button" class="ease-in-out duration-300  hover:scale-110 hover:bg-[#42A66A] hover:text-white hover:drop-shadow-lg border-[#42A66A] border-[1px] rounded-full py-3 px-10 mt-7 text-[#42A66A] font-bold">
                         Register Now
                     </button>
                 </div>
@@ -295,5 +340,8 @@
     <Footer>
 
     </Footer>
+
+    <script src="./function.js"></script>
+
 </body>
 </html>
